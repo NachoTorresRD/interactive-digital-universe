@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Interactive Digital Universe — Explore the NTDESWEB constellation</title>
+  <meta name="description" content="Navigate a living WebGL universe where WHABOT, POSENT, NTDESWEB and NT Skill Supreme exist as interactive worlds.">
+  <meta name="theme-color" content="#121b37">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://universe.ntdesweb.dev/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Interactive Digital Universe">
+  <meta property="og:description" content="Four digital worlds. One living constellation.">
+  <meta property="og:url" content="https://universe.ntdesweb.dev/">
+  <meta property="og:image" content="https://universe.ntdesweb.dev/assets/og-universe.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Interactive Digital Universe">
+  <meta name="twitter:description" content="Explore the NTDESWEB constellation in real-time WebGL.">
+  <meta name="twitter:image" content="https://universe.ntdesweb.dev/assets/og-universe.png">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"CollectionPage","name":"Interactive Digital Universe","url":"https://universe.ntdesweb.dev/","creator":{"@type":"Person","name":"Nacho Torres","url":"https://github.com/NachoTorresRD"},"hasPart":[{"@type":"SoftwareApplication","name":"WHABOT"},{"@type":"SoftwareApplication","name":"POSENT"},{"@type":"WebSite","name":"NTDESWEB"},{"@type":"CreativeWork","name":"NT Skill Supreme"}]}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#project-index">Skip to project index</a>
+
+  <div class="genesis" id="genesis" role="status" aria-live="polite">
+    <div class="genesis-core" aria-hidden="true"><i></i><i></i><i></i></div>
+    <p>Generating local universe <b id="genesis-value">0%</b></p>
+  </div>
+
+  <canvas id="universe" aria-hidden="true"></canvas>
+  <div class="nebula-wash" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="masthead">
+    <a class="wordmark" href="#" aria-label="Interactive Digital Universe home">
+      <svg viewBox="0 0 46 46" aria-hidden="true"><circle cx="23" cy="23" r="20"/><circle cx="23" cy="23" r="4"/><path d="M4 23h38M23 4v38"/></svg>
+      <span>NT<br>Universe</span>
+    </a>
+    <p class="coordinates"><span id="coordinate-x">X +00.00</span><span id="coordinate-y">Y +00.00</span><span>LOCAL / 04 WORLDS</span></p>
+    <button class="reset-view" id="reset-view" type="button"><i aria-hidden="true"></i>Reset orbit</button>
+  </header>
+
+  <main>
+    <section class="intro" id="intro" aria-labelledby="universe-title">
+      <p class="eyebrow">A living portfolio / rendered in real time</p>
+      <h1 id="universe-title">Digital worlds<br><em>with gravity.</em></h1>
+      <p>Move through the constellation. Approach a world to reveal the system living beneath its atmosphere.</p>
+      <button class="enter-orbit" id="enter-orbit" type="button"><span>Enter orbit</span><i aria-hidden="true">↗</i></button>
+    </section>
+
+    <section class="project-index" id="project-index" aria-label="Project index">
+      <p><span>Object index</span><b>04</b></p>
+      <ol>
+        <li><button type="button" data-project="0"><i style="--planet:#4dffb8"></i><span>WHABOT</span><b>01</b></button></li>
+        <li><button type="button" data-project="1"><i style="--planet:#ffb14d"></i><span>POSENT</span><b>02</b></button></li>
+        <li><button type="button" data-project="2"><i style="--planet:#7b8cff"></i><span>NTDESWEB</span><b>03</b></button></li>
+        <li><button type="button" data-project="3"><i style="--planet:#ff5ca8"></i><span>NT SKILL SUPREME</span><b>04</b></button></li>
+      </ol>
+    </section>
+
+    <div class="planet-labels" aria-hidden="true">
+      <span class="planet-label" data-label="0"><i></i><b>WHABOT</b><small>Conversational world</small></span>
+      <span class="planet-label" data-label="1"><i></i><b>POSENT</b><small>Commerce world</small></span>
+      <span class="planet-label" data-label="2"><i></i><b>NTDESWEB</b><small>Creative world</small></span>
+      <span class="planet-label" data-label="3"><i></i><b>NT SKILL</b><small>Intelligence world</small></span>
+    </div>
+
+    <aside class="world-dossier" id="world-dossier" aria-live="polite" aria-hidden="true">
+      <div class="dossier-topline"><span id="dossier-code">WORLD / 01</span><button id="close-dossier" type="button" aria-label="Close project details">Close ×</button></div>
+      <div class="dossier-signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <p class="dossier-type" id="dossier-type">Conversational intelligence</p>
+      <h2 id="dossier-title">WHABOT</h2>
+      <p id="dossier-description">Automation shaped as a responsive, always-on communication system.</p>
+      <div class="dossier-meta"><span id="dossier-orbit">Orbit 2.4 AU</span><span id="dossier-status">System active</span></div>
+      <div class="dossier-actions">
+        <a id="dossier-live" href="#" target="_blank" rel="noreferrer"><span>Live demo</span><i>↗</i></a>
+        <a id="dossier-github" href="#" target="_blank" rel="noreferrer"><span>GitHub</span><i>↗</i></a>
+        <a id="dossier-website" href="#" target="_blank" rel="noreferrer"><span>Website</span><i>↗</i></a>
+      </div>
+    </aside>
+
+    <p class="interaction-hint" id="interaction-hint"><i aria-hidden="true"></i>Move toward a planet to bend the camera</p>
+  </main>
+
+  <footer><p>© 2026 Nacho Torres</p><p>Drag to influence orbit · Select to lock · Esc to return</p></footer>
+  <noscript><p class="no-script">JavaScript and WebGL are required for orbital navigation. Use the project links in the index to explore each work.</p></noscript>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
