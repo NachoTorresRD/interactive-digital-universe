@@ -2,6 +2,9 @@
 
 [![Live experience](https://img.shields.io/badge/Live-universe.ntdesweb.dev-6cffca?style=for-the-badge&labelColor=11172f)](https://universe.ntdesweb.dev/)
 
+- **Live experience:** https://universe.ntdesweb.dev/
+- **Explore more NTDESWEB experiments:** https://fx.ntdesweb.dev/
+
 A living WebGL constellation where WHABOT, POSENT, NTDESWEB and NT Skill Supreme exist as explorable digital worlds. Every planet has its own procedural surface, orbital behavior, particle system and verified project links.
 
 ![Interactive Digital Universe preview](assets/preview.gif)
